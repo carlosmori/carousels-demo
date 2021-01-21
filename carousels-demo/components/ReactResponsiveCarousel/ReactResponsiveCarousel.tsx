@@ -11,6 +11,7 @@ function ReactResponsiveCarousel() {
     */
     return (
         <div>
+            <h2>React Responsive Carousel</h2>
             <Carousel>
                 <div>
                     <img src="http://rocketinsights.imgix.net/Gucci.png" />
