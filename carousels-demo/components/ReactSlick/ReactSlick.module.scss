@@ -1,7 +1,14 @@
 .slickCarousel{
-    width: 80%;
     background-color: rgb(189, 198, 253);
-    img{
-        width: 40%;
+    & :global(.custom-center-class) {
+        background-color: blue;
     }
+    & :global(.slick-center) {
+        background-color: red;
+    }
+    & :global(.slick-slide){
+        // width: auto !important;
+        // height: 100%;
+    }
+
 }

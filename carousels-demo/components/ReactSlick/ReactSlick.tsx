@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import styles from './ReactSlick.module.scss'
 function ReactSlick() {
   const settings = {
-    className: 'center',
+    className: 'custom-center-class',
     centerMode: true,
     centerPadding: '60px',
     dots: true,
@@ -13,11 +13,9 @@ function ReactSlick() {
     slidesToShow: 3,
     focusOnSelect: true,
   }
-  /*
-   */
 
   return (
-    <div className="w-screen bg-yellow-200 h-3/6 p-36">
+    <div className={`${styles.slickCarousel} w-screen bg-yellow-200 h-3/6 p-36`}>
       <Slider {...settings}>
         <div>
           <img src="http://rocketinsights.imgix.net/Gucci.png" alt="Gucci" />
@@ -29,7 +27,7 @@ function ReactSlick() {
           <img src="http://rocketinsights.imgix.net/Sports.png" alt="Sports" />
         </div>
         <div>
-          <img src="http://rocketinsights.imgix.net/Sports.png" alt="Sports" />
+          <img src="http://rocketinsights.imgix.net/Sports.png" alt="Sports2" />
         </div>
       </Slider>
     </div>
