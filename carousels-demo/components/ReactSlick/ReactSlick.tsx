@@ -5,13 +5,15 @@ function ReactSlick() {
   const settings = {
     className: 'custom-center-class',
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '120px',
     dots: true,
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 3,
+    slidesToShow: 1,
     focusOnSelect: true,
+    useCss: true,
+    face: true,
   }
 
   return (

@@ -14,13 +14,13 @@ function ReactResponsiveCarousel() {
     showStatus: true,
     showIndicators: true,
     infiniteLoop: true,
-    showThumbs: true,
+    showThumbs: false,
     useKeyboardArrows: true,
     autoPlay: false,
     stopOnHover: true,
     swipeable: true,
     dynamicHeight: false,
-    emulateTouch: true,
+    emulateTouch: false,
     thumbWidth: 100,
     selectedItem: 0,
     interval: 3000,
@@ -31,9 +31,13 @@ function ReactResponsiveCarousel() {
   }
   return (
     <div className={styles.carousel}>
-      <h2>React Responsive Carousel</h2>
       <Carousel {...config}>
-        <div>
+        <img width="300" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide1" alt="1" />
+        <img width="400" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide2" alt="1" />
+        <img width="400" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide3" alt="1" />
+        <img width="400" src="https://via.placeholder.com/400/ffffff/c0392b/&text=slide4" alt="1" />
+
+        {/* <div>
           <img className="carousel__img" src="http://rocketinsights.imgix.net/Gucci.png" />
           <p className="legend">Legend 1</p>
         </div>
@@ -44,7 +48,7 @@ function ReactResponsiveCarousel() {
         <div>
           <img className="carousel__img" src="http://rocketinsights.imgix.net/Sports.png" />
           <p className="legend">Legend 3</p>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   )

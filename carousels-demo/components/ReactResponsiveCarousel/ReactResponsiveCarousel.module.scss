@@ -1,12 +1,13 @@
 .carousel{
+    height: 60vh;
     // .slide{
     //     img{
     //         width: 90%;
     //     }
     // }
-    & :global(.carousel__img) {
-            width: 90% !important;
-    }
+    // & :global(.carousel__img) {
+    //         width: 90% !important;
+    // }
     .slide{
         // img{
 
